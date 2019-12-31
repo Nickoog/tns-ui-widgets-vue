@@ -1,6 +1,6 @@
 <template>
   <Page>
-    <Progress />
+    <ActivityIndicator />
   </Page>
 </template>
 
@@ -10,9 +10,10 @@ import Label from './Label'
 import Switch from './Switch'
 import Slider from './Slider'
 import Progress from './Progress'
+import ActivityIndicator from './ActivityIndicator'
 
 export default {
-  components: { Button, Label, Switch, Slider, Progress }
+  components: { Button, Label, Switch, Slider, Progress, ActivityIndicator }
 }
 </script>
 
