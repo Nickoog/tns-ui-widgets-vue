@@ -1,6 +1,6 @@
 <template>
   <Page>
-    <Slider />
+    <Progress />
   </Page>
 </template>
 
@@ -9,8 +9,10 @@ import Button from './Button'
 import Label from './Label'
 import Switch from './Switch'
 import Slider from './Slider'
+import Progress from './Progress'
+
 export default {
-  components: { Button, Label, Switch, Slider }
+  components: { Button, Label, Switch, Slider, Progress }
 }
 </script>
 
