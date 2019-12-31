@@ -1,6 +1,6 @@
 <template>
   <Page>
-    <ActivityIndicator />
+    <List />
   </Page>
 </template>
 
@@ -11,9 +11,18 @@ import Switch from './Switch'
 import Slider from './Slider'
 import Progress from './Progress'
 import ActivityIndicator from './ActivityIndicator'
+import List from './List'
 
 export default {
-  components: { Button, Label, Switch, Slider, Progress, ActivityIndicator }
+  components: {
+    Button,
+    Label,
+    Switch,
+    Slider,
+    Progress,
+    ActivityIndicator,
+    List
+  }
 }
 </script>
 
