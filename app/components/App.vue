@@ -1,14 +1,15 @@
 <template>
   <Page>
-    <Button />
+    <Label />
   </Page>
 </template>
 
 <script lang="ts">
 import Button from './Button'
+import Label from './Label'
 
 export default {
-  components: { Button }
+  components: { Button, Label }
 }
 </script>
 
