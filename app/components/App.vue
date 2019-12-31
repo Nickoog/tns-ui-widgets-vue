@@ -1,6 +1,6 @@
 <template>
   <Page>
-    <Switch />
+    <Slider />
   </Page>
 </template>
 
@@ -8,9 +8,9 @@
 import Button from './Button'
 import Label from './Label'
 import Switch from './Switch'
-
+import Slider from './Slider'
 export default {
-  components: { Button, Label, Switch }
+  components: { Button, Label, Switch, Slider }
 }
 </script>
 
