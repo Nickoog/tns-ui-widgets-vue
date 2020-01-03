@@ -1,6 +1,6 @@
 <template>
   <Page>
-    <TextField />
+    <TextView />
   </Page>
 </template>
 
@@ -13,6 +13,7 @@ import Progress from './Progress'
 import ActivityIndicator from './ActivityIndicator'
 import List from './List'
 import TextField from './TextField'
+import TextView from './TextView'
 
 export default {
   components: {
@@ -23,7 +24,8 @@ export default {
     Progress,
     ActivityIndicator,
     List,
-    TextField
+    TextField,
+    TextView
   }
 }
 </script>
