@@ -1,6 +1,6 @@
 <template>
   <Page>
-    <TextView />
+    <SegmentedBar />
   </Page>
 </template>
 
@@ -14,6 +14,7 @@ import ActivityIndicator from './ActivityIndicator'
 import List from './List'
 import TextField from './TextField'
 import TextView from './TextView'
+import SegmentedBar from './SegmentedBar'
 
 export default {
   components: {
@@ -25,7 +26,8 @@ export default {
     ActivityIndicator,
     List,
     TextField,
-    TextView
+    TextView,
+    SegmentedBar
   }
 }
 </script>
