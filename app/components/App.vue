@@ -1,6 +1,6 @@
 <template>
   <Page>
-    <List />
+    <TextField />
   </Page>
 </template>
 
@@ -12,6 +12,7 @@ import Slider from './Slider'
 import Progress from './Progress'
 import ActivityIndicator from './ActivityIndicator'
 import List from './List'
+import TextField from './TextField'
 
 export default {
   components: {
@@ -21,7 +22,8 @@ export default {
     Slider,
     Progress,
     ActivityIndicator,
-    List
+    List,
+    TextField
   }
 }
 </script>
