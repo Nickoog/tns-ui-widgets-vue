@@ -14,6 +14,11 @@
       @monthChange="onDateChanged($event)"
       @loaded="onDateLoaded($event)"
     ></DatePicker>
+    <ListPicker
+      :items="myItems"
+      :selectedIndex="selectedIndex"
+      @selectedIndexChange="onSelectedIndexChange($event)"
+    ></ListPicker>
   </StackLayout>
 </template>
 
@@ -21,12 +26,15 @@
 import { EventData } from 'tns-core-modules/data/observable/observable'
 import { DatePicker } from 'tns-core-modules/ui/date-picker'
 import { TimePicker } from 'tns-core-modules/ui/time-picker'
+import { ListPicker } from 'tns-core-modules/ui/list-picker'
 import { StackLayout } from 'tns-core-modules/ui/layouts/stack-layout'
 
 export default {
   data() {
     return {
-      firstName: 'NIco'
+      firstName: 'NIco',
+      myItems: ['toto', 'tata', 'mimi', 'kiki'],
+      selectedIndex: 2
     }
   },
   methods: {
@@ -57,6 +65,11 @@ export default {
     monthChange(args) {
       console.log('old value: ' + args.oldValue)
       console.log('new value: ' + args.value)
+    },
+    onSelectedIndexChange(args) {
+      const ListPicker = <ListPicker>args.object
+
+      alert('name: ' + this.myItems[ListPicker.selectedIndex])
     }
   }
 }
