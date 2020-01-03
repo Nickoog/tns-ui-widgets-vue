@@ -1,6 +1,6 @@
 <template>
   <Page>
-    <SegmentedBar />
+    <SearchBar />
   </Page>
 </template>
 
@@ -15,6 +15,7 @@ import List from './List'
 import TextField from './TextField'
 import TextView from './TextView'
 import SegmentedBar from './SegmentedBar'
+import SearchBar from './SearchBar'
 
 export default {
   components: {
@@ -27,7 +28,8 @@ export default {
     List,
     TextField,
     TextView,
-    SegmentedBar
+    SegmentedBar,
+    SearchBar
   }
 }
 </script>
